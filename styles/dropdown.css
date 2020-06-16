@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor_3 {
+  width: 100%;
+  margin: auto;
+  background-color: #FFF;
+  border: 3px solid black;
+}
+
+.lenguajes h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  margin-top: 0.3em;
+}
+
+.lenguajes h1::before {
+  content: url(../img/skills.png);
+  display: block;
+}
+
+.skills {
+  line-height: 2em;
+  font-size: 2.5em;
+  margin: auto;
+  margin-bottom: 0.1em;
+}
+
+.skills .html5_sk {
+  margin-left: 700px;
+  margin-right: 700px;
+}
+.skills .css_sk {
+  margin-left: 700px;
+  margin-right: 700px;
+}
+.skills .javascript_sk {
+  margin-left: 700px;
+  margin-right: 700px;
+  display: inline;
+}
+
+
+.html5_sk::before {
+  content: url(../img/html-5.png);
+}
+.css_sk::before {
+  content: url(../img/css.png);
+}
+.javascript_sk::before {
+  content: url(../img/js.png);
+}

@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fondoPrimario: #FCF7F8;
+	--colorOscuro: #1A1E21;
+	--azul: #3860EC;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 500px;
+	width: 90%;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.titulo {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--colorOscuro);
+	margin-bottom: 20px;
+}
+
+.grupo {
+	padding: 60px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li, 
+.grupo text {
+	background: #dbdbdb;
+	padding: 10px;
+}
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+
+.enlace:link {
+	color: orangered;
+}
+
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+
+/* (CLASE: parrafos) (ETIQUETA: p) (DOSPUNTOS: primerhijo (primer item) (HOVER: animacion) */
+
+.parrafos p:first-child:hover {
+	color: #FFF;
+	background-color: blue;
+	border: none;
+
+}
+
+.parrafos p:last-child:hover {
+	color: #FFF;
+	background-color: aqua;
+	
+}
+
+.parrafos p:nth-of-type(2) {
+	background-color: limegreen;
+	color: #FFF;
+}
+
+/* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+
+/* ----------------------------------------------
+	SE ACCEDE AL ELEMENTO, LUEGO A LA ETIQUETA HTML 
+	Y LUEGO A LA CLASE 'FIRST OF TYPE' (PRIMERO DE SU TIPO)
+	--------------------------------------------- */
+
+.elementos p:first-of-type {
+	background-color: var(--azul);
+	color: white;
+	font-weight: bold;
+	margin-top: 1em;
+	border: 5px solid yellow;
+}
+/* ----------------------------------------------
+	SE ACCEDE AL ELEMENTO, LUEGO A LA ETIQUETA HTML 
+	Y LUEGO A LA CLASE 'LAST OF TYPE' (ULTIMO DE SU TIPO)
+	--------------------------------------------- */
+.elementos div:last-of-type {
+	background-color: orangered;
+	color: #FFF;
+	font-weight: bolder;
+}
+
+.elementos span:first-of-type {
+	background-color: var(--colorOscuro);
+	color: #FFF;
+	margin-top: 1em;
+}
+
+.elementos text:first-of-type {
+	background-color: lightsalmon;
+	color: #FFF;
+	position: absolute;
+	margin-top: 1em;
+	min-width: 32.2%;
+}
+/* ? --- --- --- --- LISTA --- --- --- --- */
+
+/* -------------------------------------------
+	ACCEDEMOS A LA LISTA Y LA CLASE NTH-CHILD (HIJO DE LA CLASE)
+	INTRODUCIMOS EL VALOR EN EL PARENTESIS, EN ESTE CASO, IMPAR Y MODIFICAMOS SOLO ESOS VALORES
+	------------------------------------------- */
+.lista :nth-child(odd):hover {
+	background-color: black;
+	color: #FFF;
+	font-weight: bold;
+	list-style: none;
+}
+.lista :nth-child(even):hover {
+	background-color: red;
+	color: #000;
+	font-weight: bolder;
+	list-style: none;
+}
+
+
+/* ? --- --- --- --- LISTA 2 --- --- --- --- */
+
+.lista2 :nth-of-type(2),
+.lista2 span:nth-of-type(1) {
+	background-color: skyblue;
+	border: 2px solid black;
+	font-weight: bold;
+
+}
+
+
+/* ? --- --- --- --- LISTA 3 --- --- --- --- */
+
+.lista3 span {
+	background: none;
+	border: none;
+	color: transparent;
+}
+.lista3 span:hover {
+	color: #FFF;
+	background: magenta;
+}
+
+
+/* ? --- --- --- --- LISTA 4 --- --- --- --- */
+
+/* DE SOLO CIERTO TIPO */
+.lista4 p:only-of-type {
+	background-color: mediumseagreen;
+}

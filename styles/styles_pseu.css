@@ -1,0 +1,103 @@
+:root {
+	--fondoPrimario: #323941;
+	--fondoSecundario: #1A1E21;
+	--azulPrimario: #3860EC;
+	--azulSecundario: #2247ce;
+	--rojo: #E50914;
+    --fondo: #141414;
+}
+
+.contenedor_2 {
+	width: 60%;
+	height: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+	background-color: #284b63;
+	border: 3px solid black;
+}
+
+.logo {
+	width: 30%;
+	margin: auto;
+	margin-top: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+svg {
+	width: 50%;
+}
+
+.dialogo {
+	max-width: 20%;
+	background: var(--fondoPrimario);
+	padding: 25px;
+	color: #fff;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	font-size: 18px;
+	line-height: 28px;
+	display: flex;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* Pseudoelementos CSS */
+
+
+.dialogo::selection {
+	background: #D61A1A;
+}
+
+.dialogo::after {
+	content: '';
+	display: block; /* HACER EL AFTER UN CONTENIDO EN BLOQUE */
+	position: absolute; /* posicion absoluta para mover libremente el bloque */
+	bottom: -295px;
+	border-top: 20px solid var(--fondoPrimario);
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	right: calc(50% - 20px); /* restamos 20px del borde para centrar correctamente */
+}
+
+
+.boton {
+	width: 100%;
+	background: var(--azulPrimario);
+	display: inline-block;
+	padding: 25px;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase; /* poner en mayus el texto */
+	border-radius: 5px;
+	margin-bottom: 20px;
+	transition: .3s ease all;
+}
+
+.boton .principal {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.boton:hover {
+	background: var(--azulSecundario);
+}
+
+.enlace {
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #D4D4D4;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.enlace:hover {
+	text-decoration: underline;
+}

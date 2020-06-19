@@ -15,5 +15,5 @@ Proyecto: N
 
 ******************************************************************
 
-!(https://github.com/klitown/proyecto_1/blob/master/result-1.png)
-!(https://github.com/klitown/proyecto_1/blob/master/result-2.png)
+![res-1](https://github.com/klitown/proyecto_1/blob/master/result-1.png)
+![res-2](https://github.com/klitown/proyecto_1/blob/master/result-2.png)

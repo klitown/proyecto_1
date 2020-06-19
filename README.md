@@ -11,7 +11,7 @@ Proyecto: N
 
 - Icons & stuff from https://flaticon.com
 
-- Big thanks to this: https://coolors.co/palettes/trending
+- Palettes: https://coolors.co/palettes/trending
 
 ******************************************************************
 
